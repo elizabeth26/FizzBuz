@@ -42,7 +42,7 @@ public class FizzBuzzTest {
 		assertEquals("fizzbuzz", fizzBuzz.donnerLaReponsePour(45));
 	}
 	
-	@Test
+	/*@Test
 	public void doitRepondre_bang_PourUnNombreMultipleDe7() {
 		assertEquals("bang", fizzBuzz.donnerLaReponsePour(7));
 		assertEquals("bang", fizzBuzz.donnerLaReponsePour(14));
@@ -52,14 +52,12 @@ public class FizzBuzzTest {
 	@Test
 	public void doitRepondre_buzzbang_PourUnNombreMultipleDe3EtMultipleDe7() {
 		assertEquals("buzzbang", fizzBuzz.donnerLaReponsePour(21));
-		/*assertEquals("buzzbang", fizzBuzz.donnerLaReponsePour(30));
-		assertEquals("buzzbang", fizzBuzz.donnerLaReponsePour(45));*/
+		
 	}
 	
 	@Test
 	public void doitRepondre_fizzbuzzbang_PourUnNombreMultipleDe3_5_7() {
 		assertEquals("fizzbuzzbang", fizzBuzz.donnerLaReponsePour(105));
-		/*assertEquals("fizzbuzz", fizzBuzz.donnerLaReponsePour(30));
-		assertEquals("fizzbuzz", fizzBuzz.donnerLaReponsePour(45));*/
-	}
+		
+	}*/
 }
