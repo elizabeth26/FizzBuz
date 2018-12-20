@@ -1,11 +1,12 @@
 package iut.fr.FizzBuzz;
 
 public class FizzBuzz {
+	
 
 	public String donnerLaReponsePour(Integer nombre) {
-
-		if (isFizzBuzz(nombre))
-			return "fizzbuzz";
+		RegleFizzBuzz regleFizzBuzz=new RegleFizzBuzz();
+		if (regleFizzBuzz.estVerifieePar(nombre))
+			return RegleFizzBuzz.valeurAAfficherSiRegleVerifiee();
 
 		if (isBuzz(nombre))
 			return "buzz";
@@ -16,7 +17,6 @@ public class FizzBuzz {
 			return "bang";
 		if (isFizzbang(nombre))
 			return "fizzbang";
-
 		if (isbuzzbang(nombre))
 			return "buzzbang";
 		if(isfizzbuzzbang(nombre))
@@ -25,11 +25,7 @@ public class FizzBuzz {
 		return String.valueOf(nombre);
 	}
 
-	private boolean isFizzBuzz(Integer nombre) {
-		return 0 == nombre % (3 * 5);
-	}
-
-	private boolean isBuzz(Integer nombre) {
+	public static boolean isBuzz(Integer nombre) {
 		return 0 == nombre % 5;
 	}
 
